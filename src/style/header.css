@@ -1,0 +1,499 @@
+/* Bagian Header */
+@keyframes slide {
+    0% {
+        background-image: url(https://miro.medium.com/max/9800/1*Ojss4zFsFr7M3TdM6Jk8oA.jpeg);
+    }
+    20% {
+        background-image: url(https://www.serviceseeking.com.au/blog/wp-content/uploads/2016/08/wideeyecreativedotcom.jpg);
+    }
+    40% {
+        background-image: url(https://www.howtopython.org/wp-content/uploads/2020/04/laptops_python.jpg);
+    }
+    60% {
+        background-image: url(https://miro.medium.com/max/9800/1*Ojss4zFsFr7M3TdM6Jk8oA.jpeg);
+    }
+    80% {
+        background-image: url(https://www.serviceseeking.com.au/blog/wp-content/uploads/2016/08/wideeyecreativedotcom.jpg);
+    }
+    100% {
+        background-image: url(https://www.howtopython.org/wp-content/uploads/2020/04/laptops_python.jpg);
+    }
+}
+.jumbotron {
+    height: 650px;
+    padding: 0px 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background:  rgba(0, 0, 0, 0.6) url(https://www.howtopython.org/wp-content/uploads/2020/04/laptops_python.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    animation: slide 30s infinite;
+}
+
+.jumbotron h2 {
+    background-color: white;
+    color: rgb(0, 0, 0);
+    padding: 6px 10px;
+    margin-bottom: 10px;
+    width:auto;
+    border-radius: 6px;
+    font-size: 25px;
+}
+
+.jumbotron h1 {
+    font-weight: lighter;
+    margin-bottom: -6px;
+    font-size: 50px;
+}
+
+.jumbotron p:nth-child(3) {
+    color: rgb(172, 172, 172);
+    margin-bottom: 15px;
+}
+
+.jumbotron p {
+    font-size: 15px;
+    margin-bottom: 6px;
+}
+.head-sosmed img {
+    margin-top: 20px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 8px;
+    margin-right: 15px;
+    transition: 0.5s;
+}
+
+.head-sosmed img:hover {
+    background-color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    transform: translateY(-70px);
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    color: white;
+    font-size: 20px;
+    padding: 20px 0;
+}
+
+.nav-list li {
+    margin: 0 45px;
+    transition: 0.5s;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-list li:hover {
+    border-bottom: 1px solid white;
+}
+
+.burger {
+    display: none;
+}
+
+.burger .line {
+    width: 23px;
+    height: 2px;
+    margin: 2px 0;
+    background-color: white;
+}
+
+/* Bagian Responsive */
+@media screen and (min-width: 2000px) {
+    .jumbotron {
+        height: 690px;
+    }
+    .jumbotron h2 {
+        font-size: 45px;
+        padding: 8px 12px;
+    }
+
+    .jumbotron h1 {
+        font-size: 70px;
+    }
+
+    .jumbotron p:nth-child(3) {
+        font-size: 23px;
+        margin-bottom: 25px;
+    }
+
+    .jumbotron p {
+        font-size: 23px;
+        margin-bottom: 10px;
+    }
+
+    .head-sosmed img {
+        width: 70px;
+        height: 70px;
+        padding: 15px;
+        border-radius: 30px;
+    }
+
+    .nav-list {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 2000px) and (min-width: 1600px) {
+    .jumbotron {
+        height: 640px;
+    }
+
+    .jumbotron h2 {
+        font-size: 35px;
+        padding: 8px 12px;
+    }
+
+    .jumbotron h1 {
+        font-size: 60px;
+    }
+
+    .jumbotron p:nth-child(3) {
+        font-size: 23px;
+        margin-bottom: 25px;
+    }
+
+    .jumbotron p {
+        font-size: 23px;
+        margin-bottom: 10px;
+    }
+
+    .head-sosmed img {
+        width: 60px;
+        height: 60px;
+        padding: 13px;
+        border-radius: 30px;
+    }
+
+    .nav-list {
+        font-size: 23px;
+    }
+}
+
+@media screen and (max-width: 1700px) and (min-width: 1400px) {
+    .jumbotron {
+        height: 610px;
+    }
+
+    .jumbotron h2 {
+        font-size: 30px;
+        padding: 7px 11px;
+    }
+
+    .jumbotron h1 {
+        font-size: 55px;
+    }
+
+    .jumbotron p:nth-child(3) {
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+
+    .jumbotron p {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .head-sosmed img {
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+        border-radius: 25px;
+    }
+
+    .nav-list {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .jumbotron {
+        height: 550px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .jumbotron {
+        height: 450px;
+    }
+
+    .jumbotron h2 {
+        font-size: 22px;
+    }
+
+    .jumbotron h1 {
+        font-size: 45px;
+    }
+
+    .nav-list {
+        font-size: 16px;
+    }
+
+    .nav-list li {
+        margin: 0 35px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .jumbotron {
+        height: 400px;
+    }
+
+    .jumbotron h1 {
+        font-size: 40px;
+    }
+
+
+    .jumbotron p {
+        font-size: 12px;
+    }
+
+    .head-sosmed img {
+        width: 35px;
+        height: 35px;
+    }
+
+    nav {
+        transform: translateY(-55px);
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .jumbotron {
+        height: 350px;
+    }
+
+    .jumbotron h2 {
+        font-size: 19px;
+    }
+
+
+    .jumbotron h1 {
+        font-size: 30px;
+    }
+
+    .jumbotron p:nth-child(3) {
+        font-size: 10px;
+        margin-top: 5px;
+    }
+
+    .jumbotron p {
+        font-size: 10px;
+        margin-bottom: 4px;
+    }
+
+    .head-sosmed img {
+        margin-top: 15px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .nav-list {
+        font-size: 14px;
+    }
+
+    .nav-list li {
+        margin: 0 30px;
+    }
+}
+
+/* Untuk Layar Hp */
+@media screen and (max-width: 576px) {
+    .head {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .jumbotron {
+        height: 590px;
+        padding: 0px 5px;
+        margin-top: -66px;
+        text-align: center;
+    }
+
+    .jumbotron h2 {
+        margin-top: 70px;
+        font-size: 20px;
+    }
+
+
+    .jumbotron h1 {
+        font-size: 50px;
+        word-spacing: 400px;
+    }
+
+    .jumbotron p:nth-child(3) {
+        font-size: 13px;
+        margin-top: 5px;
+    }
+
+    .jumbotron p {
+        font-size: 13px;
+        margin-bottom: 4px;
+        padding: 0 20px;
+    }
+
+    .head-sosmed img {
+        margin-top: 15px;
+        width: 45px;
+        height: 45px;
+        padding: 10px;
+    }
+
+    nav {
+        align-items: center;
+        justify-content: flex-end;
+        transform: translateY(0px);
+    }
+    .nav-list {
+        font-size: 17px;
+        position: absolute;
+        right: 0px;
+        left: 0;
+        height: 500px;
+        top: -6px;
+        background-color: rgb(18, 18, 18);
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        transform: translateY(-120%);
+        transition: 0.5s ease-in;
+    }
+
+    .nav-list li {
+        margin: 0 25px;
+    }
+
+    .nav-active {
+        transform: translateY(0%);
+    }
+
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+
+    .burger {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        margin: 50px 25px 0 0px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .jumbotron h2 {
+        margin-top: 70px;
+    }
+    
+    .jumbotron h1 {
+        font-size: 45px;
+    }
+
+    .jumbotron p:nth-child(3) {
+        font-size: 12px;
+    }
+
+    .jumbotron p {
+        font-size: 12px;
+    }
+
+    .head-sosmed img {
+        margin-top: 15px;
+        width: 43px;
+        height: 43px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .jumbotron h2 {
+        font-size: 19px;
+    }
+    .jumbotron h1 {
+        font-size: 43px;
+    }
+
+    .jumbotron p:nth-child(3) {
+        font-size: 11px;
+    }
+
+    .jumbotron p {
+        font-size: 11px;
+        padding: 0 15px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .jumbotron h2 {
+        padding: 4px 10px;
+    }
+    .jumbotron h1 {
+        font-size: 40px;
+    }
+
+    .jumbotron p:nth-child(3) {
+        font-size: 10px;
+    }
+
+    .jumbotron p {
+        font-size: 11px;
+        padding: 0 3px;
+    }
+
+    .head-sosmed img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .jumbotron {
+        height: 550px;
+    }
+    .jumbotron h2 {
+        padding: 4px 10px;
+    }
+    .jumbotron h1 {
+        font-size: 35px;
+    }
+
+    .jumbotron p:nth-child(3) {
+        font-size: 9px;
+    }
+
+    .jumbotron p {
+        font-size: 10px;
+    }
+
+    .head-sosmed img {
+        width: 35px;
+        height: 35px;
+    }
+}
