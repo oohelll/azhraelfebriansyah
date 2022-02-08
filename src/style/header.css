@@ -433,11 +433,15 @@ nav {
 }
 
 @media screen and (max-width: 400px) {
+    .jumbotron {
+        height: 650px;
+    }
+
     .jumbotron h2 {
-        font-size: 19px;
+        font-size: 21px;
     }
     .jumbotron h1 {
-        font-size: 43px;
+        font-size: 50px;
     }
 
     .jumbotron p:nth-child(3) {
