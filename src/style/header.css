@@ -59,6 +59,10 @@
     font-size: 15px;
     margin-bottom: 6px;
 }
+
+.head-sosmed a {
+    text-decoration: none;
+}
 .head-sosmed img {
     margin-top: 20px;
     width: 40px;
@@ -426,15 +430,16 @@ nav {
 
     .head-sosmed img {
         margin-top: 15px;
-        width: 45px;
-        height: 45px;
+        width: 50px;
+        height: 50px;
         padding: 10px;
+        border-radius: 25px;
     }
 }
 
 @media screen and (max-width: 400px) {
     .jumbotron {
-        height: 850px;
+        height: 830px;
     }
 
     .jumbotron h2 {
