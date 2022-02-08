@@ -426,15 +426,15 @@ nav {
 
     .head-sosmed img {
         margin-top: 15px;
-        width: 43px;
-        height: 43px;
+        width: 45px;
+        height: 45px;
         padding: 10px;
     }
 }
 
 @media screen and (max-width: 400px) {
     .jumbotron {
-        height: 650px;
+        height: 750px;
     }
 
     .jumbotron h2 {
@@ -449,7 +449,7 @@ nav {
     }
 
     .jumbotron p {
-        font-size: 11px;
+        font-size: 13px;
         padding: 0 15px;
     }
 }
