@@ -3,22 +3,28 @@
     0% {
         background-image: url(https://miro.medium.com/max/9800/1*Ojss4zFsFr7M3TdM6Jk8oA.jpeg);
     }
+
     20% {
         background-image: url(https://www.serviceseeking.com.au/blog/wp-content/uploads/2016/08/wideeyecreativedotcom.jpg);
     }
+
     40% {
         background-image: url(https://www.howtopython.org/wp-content/uploads/2020/04/laptops_python.jpg);
     }
+
     60% {
         background-image: url(https://miro.medium.com/max/9800/1*Ojss4zFsFr7M3TdM6Jk8oA.jpeg);
     }
+
     80% {
         background-image: url(https://www.serviceseeking.com.au/blog/wp-content/uploads/2016/08/wideeyecreativedotcom.jpg);
     }
+
     100% {
         background-image: url(https://www.howtopython.org/wp-content/uploads/2020/04/laptops_python.jpg);
     }
 }
+
 .jumbotron {
     height: 650px;
     padding: 0px 90px;
@@ -27,7 +33,7 @@
     justify-content: center;
     align-items: center;
     color: white;
-    background:  rgba(0, 0, 0, 0.6) url(https://www.howtopython.org/wp-content/uploads/2020/04/laptops_python.jpg);
+    background: rgba(0, 0, 0, 0.6) url(https://www.howtopython.org/wp-content/uploads/2020/04/laptops_python.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: darken;
@@ -39,7 +45,7 @@
     color: rgb(0, 0, 0);
     padding: 6px 10px;
     margin-bottom: 10px;
-    width:auto;
+    width: auto;
     border-radius: 6px;
     font-size: 25px;
 }
@@ -63,6 +69,7 @@
 .head-sosmed a {
     text-decoration: none;
 }
+
 .head-sosmed img {
     margin-top: 20px;
     width: 40px;
@@ -118,6 +125,7 @@ nav {
     .jumbotron {
         height: 690px;
     }
+
     .jumbotron h2 {
         font-size: 45px;
         padding: 8px 12px;
@@ -250,9 +258,6 @@ nav {
 }
 
 @media screen and (max-width: 800px) {
-    nav {
-        background-color: blue;
-    }
     .jumbotron {
         height: 400px;
     }
@@ -277,9 +282,6 @@ nav {
 }
 
 @media screen and (max-width: 650px) {
-    nav {
-        background-color: red;
-    }
     .jumbotron {
         height: 350px;
     }
@@ -373,6 +375,7 @@ nav {
         left: 0;
         right: 0;
     }
+
     .nav-list {
         font-size: 17px;
         position: absolute;
@@ -432,7 +435,7 @@ nav {
     .jumbotron h2 {
         font-size: 21px;
     }
-    
+
     .jumbotron h1 {
         font-size: 50px;
     }
@@ -467,10 +470,12 @@ nav {
     .jumbotron {
         height: 750px;
     }
+
     .jumbotron h2 {
         padding: 4px 10px;
         font-size: 19px;
     }
+
     .jumbotron h1 {
         font-size: 45px;
     }
@@ -504,10 +509,12 @@ nav {
     .jumbotron {
         height: 700px;
     }
+
     .jumbotron h2 {
         padding: 4px 10px;
         font-size: 17px;
     }
+
     .jumbotron h1 {
         font-size: 38px;
     }
