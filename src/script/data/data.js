@@ -1,8 +1,9 @@
-const name = [
-    {
-        firstName: "Azhrael",
-        lastName: "Febriansyah",
-    }
+const profiles = [
+    "Azhrael",
+    "Febriansyah",
+    "Bogor, 11 Mei 2000",
+    "Male",
+    "161cm / 50kg",
 ]
 
 const medias = [
@@ -28,4 +29,27 @@ const medias = [
     },
 ]
 
-export {name, medias};
+const progressBar = [
+    {
+        titlePar : "HTML and CSS",
+        skill: "html",
+        bar: "85%"
+    },
+    {
+        titlePar : "Javascript",
+        skill: "javascript",
+        bar: "70"
+    },
+    {
+        titlePar : "React",
+        skill: "react",
+        bar: "50%"
+    },
+    {
+        titlePar : "Latte Art",
+        skill: "latteArt",
+        bar: "65%"
+    }
+]
+
+export {profiles, medias, progressBar};

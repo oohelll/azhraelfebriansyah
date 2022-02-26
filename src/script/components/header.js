@@ -1,8 +1,11 @@
-import {name, medias} from '../data/data.js'
+import {profiles, medias} from '../data/data.js'
 
 const header = () => {
-    const {firstName, lastName} = name[0];
+    const [firstName, lastName, , ,] = profiles;
     const jumbotron = document.querySelector('.jumbotron');
+    const div = document.createElement('div');
+    div.classList.add('head-sosmed');
+
     jumbotron.innerHTML = 
     `
         <h2>Hello, Welcome!</h2>
@@ -11,25 +14,17 @@ const header = () => {
 
         <p>I'm Web Developer with expertise on Front End Development for over 8 months.</p>
         <p>My Expertise is to create Website Design</p>
-        <div class="head-sosmed">
-            <a href=${medias[0].Link}>
-                <img src=${medias[0].Img}
-                    alt=${medias[0].platform} class="logo ${medias[0].platform}">
-            </a>
-            <a href=${medias[1].Link}>
-                <img src=${medias[1].Img}
-                    alt=${medias[1].platform} class="logo ${medias[1].platform}">
-            </a>
-            <a href=${medias[2].Link}>
-                <img src=${medias[2].Img}
-                    alt=${medias[2].platform} class="logo ${medias[2].platform}">
-            </a>
-            <a href=${medias[3].Link}>
-                <img src=${medias[3].Img}
-                    alt=${medias[3].platform} class="logo ${medias[3].platform}">
-            </a>
-        </div>
     `
+    medias.forEach((media) => {
+        div.innerHTML += `
+            <a href=${media.Link}>
+                <img src=${media.Img}
+                    alt=${media.platform} class="logo ${media.platform}">
+            </a>
+        `
+    })
+
+    jumbotron.append(div)
 }
 
 const nav = () => {
@@ -37,13 +32,11 @@ const nav = () => {
     let navLinks = ["Home", "About", "Skill", "Portfolio"]
 
     for(let i = 0; i < navLinks.length; i++){
-        let li = document.createElement('li')
-        let a = document.createElement('a')
-        a.setAttribute("href", `#${navLinks[i]}`)
-        let text = document.createTextNode(navLinks[i])
-        a.appendChild(text)
-        li.append(a)
-        navList.appendChild(li)
+        navList.innerHTML += `
+            <li>
+                <a href="#${navLinks[i]}">${navLinks[i]}</a>
+            </li>
+        `
     }
 }
 
