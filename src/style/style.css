@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Andada+Pro&display=swap');
 @import "./header.css";
+@import "./main.css";
 
 * {
     padding: 0;

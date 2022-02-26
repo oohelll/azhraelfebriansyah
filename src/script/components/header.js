@@ -39,7 +39,7 @@ const nav = () => {
     for(let i = 0; i < navLinks.length; i++){
         let li = document.createElement('li')
         let a = document.createElement('a')
-        a.setAttribute("href", `${navLinks[i]}`)
+        a.setAttribute("href", `#${navLinks[i]}`)
         let text = document.createTextNode(navLinks[i])
         a.appendChild(text)
         li.append(a)
