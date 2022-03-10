@@ -7,18 +7,14 @@ const about = () => {
 
     div.innerHTML = `
         <h1>About</h1> 
-            <p>I am a Junior Web Developer from bogor who likes a person who always wants to seek new experiences
-            and always tries to be a positive person who can work both individually and together and has a high
-            willingness to learn</p>
+        <p>I am a Junior Web Developer from bogor who likes a person who always wants to seek new experiences
+        and always tries to be a positive person who can work both individually and together and has a high
+        willingness to learn</p>
         <p>Profile: </p>
+        ${profiles.map((profile) => {
+            return `<ul><li>${profile}</li></ul>`
+        }).join("")}
     `
-    profiles.forEach((profile) => {
-        div.innerHTML += `
-        <ul>
-            <li>${profile}</li>
-        </ul>
-        `
-    })
 
     const divBar = document.createElement('div');
     divBar.classList.add('progress-bar');
