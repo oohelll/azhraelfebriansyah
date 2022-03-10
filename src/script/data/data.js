@@ -52,4 +52,19 @@ const progressBar = [
     }
 ]
 
-export {profiles, medias, progressBar};
+const portfolio = [
+    {
+        portfolioImg : "./src/img/Website-1.png",
+        portfolioLink : "https://oohelll.github.io/findamovie1.0/"
+    },
+    {
+        portfolioImg : "./src/img/Website-2.png",
+        portfolioLink : "https://oohelll.github.io/kotabogor/"
+    },
+    {
+        portfolioImg : "./src/img/Website-3.png",
+        portfolioLink : "https://oohelll.github.io/EmmaAI/"
+    }
+]
+
+export {profiles, medias, progressBar, portfolio};

@@ -136,7 +136,12 @@
     margin: 15px 0;
 }
 
-.mySkillImg img {
+.img-1 {
+    width: 100%;
+    object-fit: contain;
+}
+
+.imgSlider img {
     width: 30%;
 }
 /* Bagian Responsive */
@@ -605,6 +610,7 @@
     .portfolioImg img {
         width: 95%;
         height: 260px;
+        margin-bottom: 10px;
     }
 }
 
@@ -628,7 +634,8 @@
     }
 
     .portfolioImg img {
-        height: 210px;
+        height: 230px;
+        margin-bottom: 10px;
     }
 }
 
@@ -639,8 +646,8 @@
         font-size: 22px;
     }
 
-    .portfolioImg img {
-        height: 230px;
+    #MyPortfolio p {
+        padding: 0 15px;
     }
 }
 
@@ -659,6 +666,6 @@
     }
 
     .portfolioImg img {
-        height: 160px;
+        height: 200px;
     }
 }
