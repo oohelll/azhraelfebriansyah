@@ -632,7 +632,7 @@
     }
 }
 
-/* Layar Untuk hp seperti redmi note 8 390px - 400px*/
+/* Layar Untuk hp seperti redmi note 8 380px - 400px*/
 @media screen and (max-width: 400px){
     /* Article Portfolio */
     #MyPortfolio h1 {
@@ -640,7 +640,7 @@
     }
 
     .portfolioImg img {
-        height: 200px;
+        height: 230px;
     }
 }
 
