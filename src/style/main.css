@@ -1,15 +1,16 @@
+main {
+    background-color: rgb(48, 49, 50);
+}
 /* Article About */
 #About {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px 70px;
-    height: 450px;
+    padding: 20px 70px;
+    height: auto;
     color: white;
     background-color: rgb(40, 42, 41);
-    overflow-y: auto;
     margin-top: -70px;
-    box-shadow: rgb(204, 129, 59) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
 }
 
 .about {
@@ -23,6 +24,7 @@
 
 .about p {
     font-size: 18px;
+    padding-right: 50px;
 }
 
 .about p:nth-child(3) {
@@ -34,47 +36,10 @@
     margin-bottom: 5px;
     margin-left: 18px;
 }
-.progress-bar {
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    background-color: rgb(48, 49, 50);
-    padding: 5px 15px 20px 15px;
-    box-shadow: rgb(204, 129, 59) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
-}
 
-.progress-bar p {
-    margin: 10px 0;
-}
+.about-Img {
+    width: 75%;
 
-.container-bar {
-    background-color: rgb(192, 192, 192);
-    width: 100%;
-}
-
-.skill {
-    background-color: rgb(204, 129, 59);
-    text-align: right;
-    color: azure;
-    border-radius: 5px;
-    padding: 1px 5px;
-}
-
-.html, .css {
-    width: 85%;
-}
-
-.javascript {
-    width: 70%;
-}
-
-.react {
-    width: 50%;
-}
-
-.latteArt {
-    width: 65%;
 }
 
 /* Article Portfolio */
@@ -83,7 +48,6 @@
     color: white;
     padding: 70px 0;
     text-align: center;
-    box-shadow: rgb(204, 129, 59) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
 }
 
 #MyPortfolio p {
@@ -117,38 +81,111 @@
 }
 
 /* Article Skill */
-#MySkill {
-    background-color: rgb(48, 49, 50);
+#Myskill {
     color: white;
-    padding: 50px 0;
-}
-
-.myskill {
-    text-align: center;
-    padding: 25px 0;
-    margin: 0 15%;
-    border-radius: 10px;
     background-color: rgb(40, 42, 41);
-    box-shadow: rgb(204, 129, 59) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+    padding: 20px 0;
+    margin: 0 80px;
+}
+#Myskill h1 {
+    text-align: center;
 }
 
-.myskill p {
+.skill-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 35px;
+}
+
+.left-skill {
+    width: 50%;
+}
+
+.skill-container img {
+    width: 35%;
+    transition: 0.5s;
+}
+
+.skill-container img:hover {
+    transform: scale(1.3);
+}
+
+.right-skill {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.right-skill p {
+    font-size: 20px;
+}
+
+.container-bar {
+    background-color: rgb(192, 192, 192);
+    border-radius: 15px;
     margin: 15px 0;
 }
 
-.img-1 {
-    width: 100%;
-    object-fit: contain;
+.skill {
+    background-color: rgb(204, 129, 59);
+    color: white;
+    padding: 5px;
+    text-align: right;
+    font-size: 20px;
+    border-radius: 15px;
 }
 
-.imgSlider img {
-    width: 30%;
+.html {
+    width: 75%;
 }
+
+.css {
+    width: 70%;
+}
+
+.javascript {
+    width: 70%;
+}
+
+.jquery {
+    width: 50%;
+}
+
+.certif-list {
+    display: flex;
+    margin-top: 45px;
+    justify-content: center;
+}
+.certif-list img {
+    cursor: pointer;
+    width:13%;
+    margin: 0 10px;
+    transition: 0.5s;
+}
+
+.certif-list img:hover {
+    transform: translateY(-15px);
+}
+
+@keyframes fade {
+    to {
+        opacity: 1;
+    }
+}
+
+.fade {
+    opacity: 0;
+    animation: fade 0.5s forwards;
+}
+
+.active {
+    opacity: 0.5;
+}
+
 /* Bagian Responsive */
 @media screen and (min-width: 2000px) {
     /* Article About */
     #About {
-        height: 600px;
         padding: 30px 100px;
     }
     .about h1 {
@@ -159,20 +196,17 @@
         font-size: 23px;
         word-spacing: 6px;
         margin-bottom: 5px;
+        /* padding-right: 20%; */
     }
 
     .about ul li, .progress-bar p {
         font-size: 23px;
     }
+
+    .about-Img {
+        width: 70%;
+    }
     
-    .container-bar {
-        margin-bottom: 20px;
-    }
-
-    .skill {
-        padding: 5px 7px;
-    }
-
     /* Article Portfolio */
     #MyPortfolio {
         padding: 150px 0;
@@ -195,12 +229,48 @@
         width: 650px;
         height: 400px;
     }
+
+    /* Article Skill */
+    #Myskill {
+        padding: 50px 0;
+    }
+    #Myskill h1 {
+        font-size: 50px;
+    }
+
+    .skill-container img {
+        width: 39%;
+    }
+
+    .right-skill {
+        width: 35%;
+    }
+
+    .right-skill p {
+        font-size: 30px;
+    }
+
+    .container-bar {
+        margin: 25px 0;
+    }
+
+    .skill {
+        padding: 7px;
+    }
+
+    .certif-list {
+        margin-top: 55px;
+    }
+
+    .certif-list img {
+        width:15%;
+    }
 }
 
 @media screen and (max-width: 2000px) and (min-width: 1600px) {
     /* Article About */
     #About {
-        height: 550px;
+        height: auto;
         padding: 30px 80px;
     }
     .about h1 {
@@ -211,6 +281,10 @@
         font-size: 21px;
         word-spacing: 6px;
         margin-bottom: 5px;
+    }
+
+    .about-Img {
+        width: 70%;
     }
 
     .about ul li, .progress-bar p{
@@ -245,6 +319,43 @@
     .portfolioImg img {
         width: 550px;
         height: 350px;
+    }
+
+    /* Article Skill */
+    #Myskill {
+        padding: 35px 0;
+    }
+
+    #Myskill h1 {
+        font-size: 40px;
+    }
+
+    .skill-container img {
+        width: 38%;
+    }
+
+    .right-skill {
+        width: 45%;
+    }
+
+    .right-skill p {
+        font-size: 27px;
+    }
+
+    .container-bar {
+        margin: 23px 0;
+    }
+
+    .skill {
+        padding: 6px;
+    }
+
+    .certif-list {
+        margin-top: 55px;
+    }
+
+    .certif-list img {
+        width:13.5%;
     }
 }
 
@@ -326,7 +437,6 @@
 @media screen and (max-width: 1600px) and (min-width: 1400px) {
     /* Article About */
     #About {
-        height: 550px;
         padding: 30px 80px;
     }
 
@@ -336,6 +446,10 @@
 
     .about p, .about ul li {
         font-size: 21px;
+    }
+
+    .about-Img {
+        width: 80%;
     }
 
     .progress-bar p {
@@ -373,6 +487,43 @@
         width: 460px;
         height: 290px;
     }
+
+    /* Article Skill */
+    #Myskill {
+        padding: 30px 0;
+    }
+
+    #Myskill h1 {
+        font-size: 35px;
+    }
+
+    .skill-container img {
+        width: 35%;
+    }
+
+    .right-skill {
+        width: 45%;
+    }
+
+    .right-skill p {
+        font-size: 25px;
+    }
+
+    .container-bar {
+        margin: 20px 0;
+    }
+
+    .skill {
+        padding: 5px;
+    }
+
+    .certif-list {
+        margin-top: 50px;
+    }
+
+    .certif-list img {
+        width:13%;
+    }
 }
 
 @media screen and (max-width: 1350px) {
@@ -402,12 +553,15 @@
 @media screen and (max-width: 1200px) {
     /* Article About */
     #About {
-        height: 400px;
         padding: 30px 60px;
     }
 
     .about h1 {
         font-size: 30px;
+    }
+
+    .about p {
+        padding-right: 0px;
     }
 
     .about p, .about ul li {
@@ -437,12 +591,32 @@
         width: 100%;
         height: 125%;
     }
+
+    /* Article Skill */
+    #Myskill {
+        margin: 0 60px;
+    }
+
+    .skill-container img {
+        width: 40%;
+    }
+
+    .right-skill {
+        width: 45%;
+    }
+
+    .right-skill p {
+        font-size: 16px;
+    }
+
+    .container-bar {
+        margin: 10px 0;
+    }    
 }
 
 @media screen and (max-width: 900px) {
     /* Article About */
     #About {
-        height: 350px;
         padding: 30px 50px;
     }
 
@@ -468,12 +642,24 @@
         margin: 16px 0;
     }
 
+   /* Article Skill */
+    #Myskill {
+        margin: 0 40px;
+    }
+
+    .skill-container img {
+        width: 35%;
+    }
+
+    .skill {
+        padding: 3px;
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 800px) {
     /* Article About */
     #About {
-        height: 300px;
         padding: 30px 30px;
     }
 
@@ -484,6 +670,10 @@
 
     .about p, .about ul li {
         font-size: 12px;
+    }
+
+    .about-Img {
+        width: 70%;
     }
 
     .progress-bar p {
@@ -515,11 +705,31 @@
     .portfolioImg img {
         height: 130%;
     }
+
+   /* Article Skill */
+    #Myskill {
+        margin: 0 20px;
+    }
+
+    #Myskill h1 {
+        font-size: 20px;
+    }
+
+    .skill-container img {
+        width: 32%;
+    }
+
+    .container-bar {
+        margin: 10px 0;
+    }
+
+    .certif-list img {
+        width:12%;
+    }
 }
 
 @media screen and (max-width: 650px) {
     #About {
-        height: 280px;
         padding: 30px 25px;
     }
 
@@ -543,6 +753,31 @@
     #MyPortfolio p {
         font-size: 11px;
     }
+
+    /* Article Skill */
+    #Myskill h1 {
+        font-size: 18px;
+    }
+
+    .left-skill {
+        width: 100%;
+    }
+
+    .skill-container img {
+        width: 40%;
+    }
+
+    .container-bar {
+        margin: 7px 0;
+    }
+
+    .right-skill {
+        width: 40%;
+    }
+
+    .right-skill p {
+        font-size: 13px;
+    }
 }
 
 /* Untuk Layar Hp */
@@ -551,7 +786,7 @@
     #About {
         height: auto;
         margin-top: -5px;
-        flex-direction: column;
+        flex-direction: column-reverse;
         padding: 30px 50px;
     }
 
@@ -570,10 +805,15 @@
     .about p {
         text-align: justify;
         font-size: 17px;
+        padding-right: 0px;
     }
 
     .about ul li {
         font-size: 17px;
+    }
+
+    .about-Img {
+        width: 95%;
     }
 
     .progress-bar {
@@ -590,6 +830,9 @@
     }
 
     /* Article Portfolio */
+    #MyPortfolio {
+        padding: 70px 0;
+    }
     #MyPortfolio h1 {
         font-size: 25px;
     }
@@ -609,8 +852,55 @@
 
     .portfolioImg img {
         width: 95%;
-        height: 260px;
+        height: 290px;
         margin-bottom: 10px;
+    }
+
+    /* Article Skill */
+    #Myskill h1 {
+        font-size: 25px;
+    }
+
+    .skill-container {
+        flex-direction: column-reverse;
+
+    }
+
+    .skill-container img {
+        margin: 25px auto 5px auto;
+        width: 80%;
+    }
+    .right-skill {
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .right-skill p {
+        font-size: 19px;
+    }
+
+    .container-bar {
+        margin: 13px 0;
+    }
+
+    .skill {
+        padding: 4px;
+    }
+
+    .certif-list {
+        overflow-x: scroll;
+        width: 80%;
+        margin: 0px auto;
+    }
+
+    .certif-list img {
+        width:32%;
+        margin: 10px 8px 0 0;
+    }
+
+    .certif-list img:nth-child(1) {
+        margin-left: 105%;
     }
 }
 
@@ -634,20 +924,61 @@
     }
 
     .portfolioImg img {
-        height: 230px;
+        height: 250px;
         margin-bottom: 10px;
+    }
+
+    /* Article Skill */
+    #Myskill {
+        margin: 0 10px;
+    }
+
+    #Myskill h1 {
+        font-size: 23px;
+    }
+
+    .skill-container img {
+        width: 85%;
+    }
+
+    .right-skill {
+        width: 85%;
+    }
+
+    .right-skill p {
+        font-size: 15px;
+    }
+
+    .container-bar {
+        margin: 11px 0;
+    }
+
+    .skill {
+        padding: 3px;
+    }
+
+    .certif-list {
+        width: 85%;
+    }
+
+    .certif-list img:nth-child(1) {
+        margin-left: 105%;
     }
 }
 
 /* Layar Untuk hp seperti redmi note 8 380px - 400px*/
 @media screen and (max-width: 400px){
+    /* Article About  */
+    .about-Img {
+        width: 100%;
+    }
     /* Article Portfolio */
     #MyPortfolio h1 {
         font-size: 22px;
     }
 
     #MyPortfolio p {
-        padding: 0 15px;
+        padding: 0 25px;
     }
 }
 
@@ -666,6 +997,39 @@
     }
 
     .portfolioImg img {
-        height: 200px;
+        height: 230px;
+    }
+
+    /* Article Skill */
+    #Myskill h1 {
+        font-size: 20px;
+    }
+
+    .skill-container img {
+        width: 90%;
+    }
+
+    .right-skill {
+        width: 90%;
+    }
+
+    .right-skill p {
+        font-size: 12px;
+    }
+
+    .container-bar {
+        margin: 7px 0;
+    }
+
+    .skill {
+        padding: 2px;
+    }
+
+    .certif-list {
+        width: 90%;
+    }
+
+    .certif-list img:nth-child(1) {
+        margin-left: 108%;
     }
 }
