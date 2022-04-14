@@ -1,5 +1,3 @@
-import {profiles, medias} from '../data/data.js'
-
 const header = () => {
     const jumbotron = document.querySelector('.jumbotron');
     const div = document.createElement('div');
@@ -42,6 +40,27 @@ const nav = () => {
             </li>
         `
     }
+
+    const windowWidth = window.innerWidth;
+    const nav = document.querySelector('nav')
+    const burger = document.querySelector('.burger')
+    const navMenu = document.querySelector('.nav-list')
+    if(windowWidth === 576){
+        window.addEventListener('scroll', () => {
+            if(window.pageYOffset > 100) {
+                nav.classList.add('dark-navbar');
+            } else {
+                nav.classList.remove('dark-navbar');
+            }
+        })
+        setTimeout(() => {
+            burger.addEventListener('click', () => {
+                navMenu.classList.toggle('dark-navbar')
+                // navList.style.backgroundColor = `rgba(0, 0, 0, 0.719)`;
+            })
+        }, 500)
+    }
+
 }
 
 

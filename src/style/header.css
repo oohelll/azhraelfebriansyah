@@ -92,6 +92,11 @@ nav {
     transform: translateY(-70px);
 }
 
+.sticky {
+    position: sticky;
+    top: 0;
+}
+
 .nav-list {
     display: flex;
     justify-content: center;
@@ -370,11 +375,16 @@ nav {
         align-items: center;
         justify-content: flex-end;
         transform: translateY(0px);
-        padding: 40px 0;
+        padding: 25px 0;
         position: fixed;
         top: 0;
         left: 0;
         right: 0;
+    }
+
+    .dark-navbar {
+        background-color: rgb(204, 129, 59);
+        transition: 0.5s;
     }
 
     .nav-list {
@@ -384,7 +394,7 @@ nav {
         left: 0;
         height: 800px;
         top: -6px;
-        background-color: rgb(18, 18, 18);
+        /* background-color: rgb(18, 18, 18); */
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;

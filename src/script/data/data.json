@@ -52,5 +52,13 @@
             "portfolioImg" : "./src/img/Website-3.png",
             "portfolioLink" : "https://oohelll.github.io/EmmaAI/"
         }
+    ],
+    "Sertifikat": [
+        "./src/img/Sertifikat_Dicoding.png",
+        "./src/img/Sertifikat_Dicoding-2.jpg",
+        "./src/img/Sertifikat_Dicoding-3.jpg",
+        "./src/img/Sertifikat_Progate.png",
+        "./src/img/Sertifikat_Progate-2.jpg",
+        "./src/img/Sertifikat_DTS.jpg"
     ]
 }

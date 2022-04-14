@@ -24,15 +24,6 @@ const about = (about) => {
                 <img src="./src/img/Web-1.svg">
             `
         })
-
-    // progressBar.forEach((prog) => {
-    //     divBar.innerHTML += `
-    //         <p>${prog.titlePar}</p>
-    //         <div class="container-bar">
-    //             <div class="skill ${prog.skill}">${prog.bar}</div>
-    //         </div>
-    //     `
-    // })
     aboutId.append(div, divBar);
 }
 
@@ -51,7 +42,7 @@ const aboutPortfolio = () => {
             const dataPortfolio = response.Portfolio;
             divPort.innerHTML = `
                 ${dataPortfolio.map((data) => {
-                    return `<a href=${data.PortfolioLink}><img src=${data.portfolioImg}></a>`
+                    return `<a href=${data.portfolioLink}><img src=${data.portfolioImg}></a>`
                 }).join("")}
             `
         })
@@ -60,25 +51,55 @@ const aboutPortfolio = () => {
 
 const mySkill = () => {
     const container = document.getElementById('Myskill');
-    const mainImg = document.querySelector('.main-img');
-    const imgs = document.querySelectorAll('.certif-list img');
+    fetch('./src/script/data/data.json')
+        .then(response => response.json())
+        .then(response => {
+            const sertifikat = response.Sertifikat;
+            const [dicoding, dicoding2, dicoding3, progate, progate2, dts] = sertifikat
+            const skills = ['HTML', 'CSS', 'Javascript', 'Jquery'];
 
-    container.addEventListener('click', (e) => {
-        if(e.target.className == 'img'){
-            mainImg.src = e.target.src;
-            mainImg.classList.add('fade')
-            setTimeout(() => {
-                mainImg.classList.remove('fade')
-            },500)
+            container.innerHTML = `
+            <h1>Skill & Certification</h1>
+            <div class="skill-container">
+                <img src=${dicoding} class="main-img">
+                <div class="right-skill">
+                    ${skills.map((skill) => {
+                        return `
+                            <p>${skill}</p>
+                            <div class="container-bar">
+                                <div class="skill ${skill}"></div>
+                            </div>
+                        `
+                    }).join("")}
+                </div>
+            </div>
+            <div class="certif-list">
+                ${sertifikat.map((sertif) => {
+                    return `<img src=${sertif} class="img"></img>`
+                }).join("")}
+            </div>
+        `
 
-            imgs.forEach((img) => {
-                if(img.classList.contains('active')){
-                    img.classList.remove('active');
-                }
-        
-                e.target.classList.add('active')
-            })
-        }
+        const mainImg = document.querySelector('.main-img');
+        const imgs = document.querySelectorAll('.certif-list img');
+
+        container.addEventListener('click', (e) => {
+            if(e.target.className == 'img'){
+                mainImg.src = e.target.src;
+                mainImg.classList.add('fade')
+                setTimeout(() => {
+                    mainImg.classList.remove('fade')
+                },500)
+    
+                imgs.forEach((img) => {
+                    if(img.classList.contains('active')){
+                        img.classList.remove('active');
+                    }
+            
+                    e.target.classList.add('active')
+                })
+            }
+        })
     })
 }
 
