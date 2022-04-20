@@ -103,5 +103,37 @@ const mySkill = () => {
     })
 }
 
+const other_skill = () => {
+    const otherSkill = document.getElementById('other-skill');
+    fetch('./src/script/data/data.json')
+        .then(response => response.json())
+        .then(response => {
+            const latte_Skill = response.Other_Skill.slice(0,2);
+            const latte_Skill2 = response.Other_Skill.slice(2);
 
-export {about, aboutPortfolio, mySkill};
+            otherSkill.innerHTML = `
+            <div class="list-coffee">
+                <div class="list-container-1">
+                    ${latte_Skill.map((skill) => {
+                        return `<img src=${skill} class="img-coffee"></img>`
+                    }).join("")}
+                </div>
+                <div class="list-container-2">
+                    ${latte_Skill2.map((skill) => {
+                        return `<img src=${skill} class="img-coffee"></img>`
+                    }).join("")}
+                </div>
+            </div>
+
+            <div class="list-coffee-text">
+                <h1>What Other Skill That I Have?</h1>
+                <p>Other than just making a website and learn how to code, I also love to making Latte Art with various
+                    pattern on the top of it. I learn Latte Art for about 5 months using simple equipment and
+                    ingridients, such as Rok Presso,
+                    French Press, Fresh Milk, And Espresso</p>
+            </div>
+            `
+        })
+
+}
+export {about, aboutPortfolio, mySkill, other_skill};

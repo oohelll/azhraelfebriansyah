@@ -60,5 +60,11 @@
         "./src/img/Sertifikat_Progate.png",
         "./src/img/Sertifikat_Progate-2.jpg",
         "./src/img/Sertifikat_DTS.jpg"
+    ],
+    "Other_Skill" : [
+        "./src/img/LatteArt-1.jpg",
+        "./src/img/LatteArt-2.jpg",
+        "./src/img/LatteArt-3.jpg",
+        "./src/img/LatteArt-4.jpg"
     ]
 }
