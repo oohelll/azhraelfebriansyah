@@ -51,6 +51,18 @@
         {
             "portfolioImg" : "./src/img/Website-3.png",
             "portfolioLink" : "https://oohelll.github.io/EmmaAI/"
+        },
+        {
+            "portfolioImg" : "./src/img/Website-4.jpeg",
+            "portfolioLink" : "https://oohelll.github.io/theamazingindonesia/"
+        },
+        {
+            "portfolioImg" : "./src/img/Website-5.jpeg",
+            "portfolioLink" : "https://oohelll.github.io/oohshittcoffee/"
+        },
+        {
+            "portfolioImg" : "./src/img/Website-6.jpeg",
+            "portfolioLink" : "https://oohelll.github.io/sejarahindonesia/"
         }
     ],
     "Sertifikat": [
